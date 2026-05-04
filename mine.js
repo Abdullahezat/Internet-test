@@ -146,10 +146,12 @@ async function runSpeedTest() {
     }
 }
 
+//فنكيشن العد التنازلي 
+
 function startSmoothCountdown(durationMs) {
     const startedAt = performance.now();
 
-    function updateCountdownNote() {
+    function updateCountdownNote(){
         const elapsed = performance.now() - startedAt;
         const remainingMs = Math.max(0, durationMs - elapsed);
         const remainingSeconds = (remainingMs / 1000).toFixed(1);
@@ -163,6 +165,8 @@ function startSmoothCountdown(durationMs) {
         clearInterval(timerId);
     };
 }
+
+//تنعيم عرض السرعة
 
 function createLiveSpeedSmoother() {
     let targetMbps = 0;

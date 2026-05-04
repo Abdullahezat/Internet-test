@@ -44,6 +44,43 @@ body.status-online {
   font-size: 36px;
 }
 
+.fast-panel {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.fast-label {
+  font-size: 15px;
+  color: #b9c8d8;
+}
+
+.fast-speed-line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.speed-value {
+  font-size: clamp(62px, 12vw, 96px);
+  line-height: 1;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.speed-unit {
+  font-size: 24px;
+  color: #d5e3f0;
+}
+
+.fast-note {
+  min-height: 22px;
+  font-size: 15px;
+  color: #96afc6;
+}
+
 ul {
   display: block;
   text-align: left;
@@ -67,6 +104,55 @@ ul {
   border-radius: 20px;
   cursor: pointer;
   display: block;
+}
+
+.speed-btn {
+  padding: 10px 14px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(77, 255, 136, 0.2);
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.social-link.facebook {
+  background: #1877f2;
+}
+
+.social-link.instagram {
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.social-link.linkedin {
+  background: #0a66c2;
 }
 
 .hide {
@@ -98,6 +184,15 @@ ul {
     font-size: 38px;
   }
 
+  .fast-label,
+  .fast-note {
+    font-size: 16px;
+  }
+
+  .speed-unit {
+    font-size: 22px;
+  }
+
   ul {
     font-size: 22px;
     left: 22px;
@@ -114,9 +209,29 @@ ul {
     font-size: 34px;
   }
 
+  .fast-label,
+  .fast-note {
+    font-size: 15px;
+  }
+
+  .speed-unit {
+    font-size: 20px;
+  }
+
   ul {
     font-size: 20px;
     left: 16px;
+  }
+
+  .speed-btn {
+    min-width: 180px;
+    padding: 14px;
+    font-size: 18px;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
   }
 
   .reload {
@@ -132,9 +247,28 @@ ul {
     font-size: 30px;
   }
 
+  .fast-label,
+  .fast-note {
+    font-size: 14px;
+  }
+
+  .speed-unit {
+    font-size: 18px;
+  }
+
   ul {
     font-size: 18px;
     left: 12px;
+  }
+
+  .speed-btn {
+    font-size: 16px;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
   }
 
   .reload {
